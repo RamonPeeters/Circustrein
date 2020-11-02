@@ -5,7 +5,7 @@ namespace CircusTrein
 {
     public class Wagon
     {
-        private const int MaximumGrootte = 10;
+        private const int MAXIMUM_GROOTTE = 10;
         private readonly List<Dier> Dieren;
         private int Punten => Dieren.Sum(d => (int)d.DierGrootte);
 
@@ -19,7 +19,7 @@ namespace CircusTrein
             Dieren.Add(dier);
         }
 
-        public bool CanAdd(Dier dier)
+        public bool TryAdd(Dier dier)
         {
             // Huidig dier is een vleesetend dier, wagon bevat kleiner of even groot dier
             if (dier.DierVoedsel == Voedsel.Vlees && Dieren.Any(d => d.DierGrootte <= dier.DierGrootte))
@@ -30,14 +30,10 @@ namespace CircusTrein
                 return false;
 
             // Dier past niet in wagon
-            if (Punten + (int)dier.DierGrootte > MaximumGrootte) return false;
+            if (Punten + (int)dier.DierGrootte > MAXIMUM_GROOTTE) return false;
 
-            return true;
-        }
-
-        public void Add(Dier dier)
-        {
             Dieren.Add(dier);
+            return true;
         }
     }
 }

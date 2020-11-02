@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ramon\\Desktop\\Fontys\\Semester 2\\Algoritmiek\\Circustrein\\CircustreinUnitTests\\CircustreinUnitTests.csproj": {}
+    "C:\\Users\\Ramon\\Source\\Repos\\Circustrein\\Circustrein\\CircustreinUnitTests\\CircustreinUnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ramon\\Desktop\\Fontys\\Semester 2\\Algoritmiek\\Circustrein\\CircustreinUnitTests\\CircustreinUnitTests.csproj": {
+    "C:\\Users\\Ramon\\Source\\Repos\\Circustrein\\Circustrein\\CircustreinUnitTests\\CircustreinUnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ramon\\Desktop\\Fontys\\Semester 2\\Algoritmiek\\Circustrein\\CircustreinUnitTests\\CircustreinUnitTests.csproj",
+        "projectUniqueName": "C:\\Users\\Ramon\\Source\\Repos\\Circustrein\\Circustrein\\CircustreinUnitTests\\CircustreinUnitTests.csproj",
         "projectName": "CircustreinUnitTests",
-        "projectPath": "C:\\Users\\Ramon\\Desktop\\Fontys\\Semester 2\\Algoritmiek\\Circustrein\\CircustreinUnitTests\\CircustreinUnitTests.csproj",
+        "projectPath": "C:\\Users\\Ramon\\Source\\Repos\\Circustrein\\Circustrein\\CircustreinUnitTests\\CircustreinUnitTests.csproj",
         "packagesPath": "C:\\Users\\Ramon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ramon\\Desktop\\Fontys\\Semester 2\\Algoritmiek\\Circustrein\\CircustreinUnitTests\\obj\\",
+        "outputPath": "C:\\Users\\Ramon\\Source\\Repos\\Circustrein\\Circustrein\\CircustreinUnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Ramon\\Desktop\\Fontys\\Semester 2\\Algoritmiek\\Circustrein\\CircusTrein\\CircusTrein.csproj": {
-                "projectPath": "C:\\Users\\Ramon\\Desktop\\Fontys\\Semester 2\\Algoritmiek\\Circustrein\\CircusTrein\\CircusTrein.csproj"
+              "C:\\Users\\Ramon\\Source\\Repos\\Circustrein\\Circustrein\\CircusTrein\\CircusTrein.csproj": {
+                "projectPath": "C:\\Users\\Ramon\\Source\\Repos\\Circustrein\\Circustrein\\CircusTrein\\CircusTrein.csproj"
               }
             }
           }
@@ -81,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\Ramon\\Desktop\\Fontys\\Semester 2\\Algoritmiek\\Circustrein\\CircusTrein\\CircusTrein.csproj": {
+    "C:\\Users\\Ramon\\Source\\Repos\\Circustrein\\Circustrein\\CircusTrein\\CircusTrein.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ramon\\Desktop\\Fontys\\Semester 2\\Algoritmiek\\Circustrein\\CircusTrein\\CircusTrein.csproj",
+        "projectUniqueName": "C:\\Users\\Ramon\\Source\\Repos\\Circustrein\\Circustrein\\CircusTrein\\CircusTrein.csproj",
         "projectName": "CircusTrein",
-        "projectPath": "C:\\Users\\Ramon\\Desktop\\Fontys\\Semester 2\\Algoritmiek\\Circustrein\\CircusTrein\\CircusTrein.csproj",
+        "projectPath": "C:\\Users\\Ramon\\Source\\Repos\\Circustrein\\Circustrein\\CircusTrein\\CircusTrein.csproj",
         "packagesPath": "C:\\Users\\Ramon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ramon\\Desktop\\Fontys\\Semester 2\\Algoritmiek\\Circustrein\\CircusTrein\\obj\\",
+        "outputPath": "C:\\Users\\Ramon\\Source\\Repos\\Circustrein\\Circustrein\\CircusTrein\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

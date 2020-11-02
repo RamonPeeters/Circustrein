@@ -27,9 +27,8 @@ namespace CircusTrein
         {
             for (int i = 0; i < Wagons.Count; i++)
             {
-                if (Wagons[i].CanAdd(dier))
+                if (Wagons[i].TryAdd(dier))
                 {
-                    Wagons[i].Add(dier);
                     return;
                 }
             }

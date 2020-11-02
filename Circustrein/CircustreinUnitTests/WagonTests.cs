@@ -1,6 +1,5 @@
 using CircusTrein;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
 
 namespace CircustreinUnitTests
 {
@@ -8,61 +7,83 @@ namespace CircustreinUnitTests
     public class WagonTests
     {
         [TestMethod]
-        public void PlantenetendDierBijVleesetendDier()
+        public void VleesetendDier_KanNietToegevoegdWordenAanWagon_MetVleesetendDier()
         {
-            Wagon wagon = new Wagon();
-            wagon.Add(new Dier(Voedsel.Vlees, Grootte.Groot));
+            // Arrange
+            Wagon wagon = new Wagon(new Dier(Voedsel.Vlees, Grootte.Groot));
 
-            bool check = wagon.CanAdd(new Dier(Voedsel.Planten, Grootte.Klein));
-            Assert.IsFalse(check);
+            // Act
+            bool added = wagon.TryAdd(new Dier(Voedsel.Vlees, Grootte.Klein));
+
+            // Assert
+            Assert.IsFalse(added);
         }
 
         [TestMethod]
-        public void VleesetendDierBijVleesetendDier()
+        public void GrootVleesetendDier_KanNietToegevoegdWordenAanWagon_MetKleinPlantenetendDier()
         {
-            Wagon wagon = new Wagon();
-            wagon.Add(new Dier(Voedsel.Vlees, Grootte.Groot));
+            // Arrange
+            Wagon wagon = new Wagon(new Dier(Voedsel.Planten, Grootte.Klein));
 
-            bool check = wagon.CanAdd(new Dier(Voedsel.Vlees, Grootte.Klein));
-            Assert.IsFalse(check);
+            // Act
+            bool added = wagon.TryAdd(new Dier(Voedsel.Vlees, Grootte.Groot));
+
+            // Assert
+            Assert.IsFalse(added);
         }
 
         [TestMethod]
-        public void GrootPlantenetendDierBijKleinVleesetendDier()
+        public void GrootPlantenetendDier_KanToegevoegdWordenAanWagon_MetKleinVleesetendDier()
         {
-            Wagon wagon = new Wagon();
-            wagon.Add(new Dier(Voedsel.Vlees, Grootte.Klein));
+            // Arrange
+            Wagon wagon = new Wagon(new Dier(Voedsel.Vlees, Grootte.Klein));
 
-            bool check = wagon.CanAdd(new Dier(Voedsel.Planten, Grootte.Groot));
+            // Act
+            bool check = wagon.TryAdd(new Dier(Voedsel.Planten, Grootte.Groot));
+
+            // Assert
             Assert.IsTrue(check);
         }
 
         [TestMethod]
-        public void DierToevoegenAanVolleWagon()
+        public void KleinPlantenetendDier_KanNietToegevoegdWordenAanWagon_MetGrootVleesetendDier()
         {
-            Wagon wagon = new Wagon();
-            wagon.Add(new Dier(Voedsel.Planten, Grootte.Groot));
-            wagon.Add(new Dier(Voedsel.Planten, Grootte.Groot));
+            // Arrange
+            Wagon wagon = new Wagon(new Dier(Voedsel.Vlees, Grootte.Groot));
 
-            bool check = wagon.CanAdd(new Dier(Voedsel.Planten, Grootte.Groot));
-            Assert.IsFalse(check);
+            // Act
+            bool added = wagon.TryAdd(new Dier(Voedsel.Planten, Grootte.Klein));
+
+            // Assert
+            Assert.IsFalse(added);
         }
 
         [TestMethod]
-        public void OptimaalBenutteTrein()
+        public void Dier_KanToegevoegdWorden_AanLegeWagon()
         {
-            Trein trein = new Trein();
-            List<Dier> dieren = new List<Dier>()
-            {
-                new Dier(Voedsel.Vlees, Grootte.Klein),
-                new Dier(Voedsel.Planten, Grootte.Groot),
-                new Dier(Voedsel.Planten, Grootte.Groot),
-                new Dier(Voedsel.Planten, Grootte.Middelmatig),
-                new Dier(Voedsel.Planten, Grootte.Middelmatig),
-                new Dier(Voedsel.Planten, Grootte.Middelmatig)
-            };
-            trein.Verdeel(dieren);
-            Assert.AreEqual(2, trein.GetWagons().Count);
+            // Arrange
+            Wagon wagon = new Wagon();
+
+            // Act
+            bool added = wagon.TryAdd(new Dier(Voedsel.Planten, Grootte.Groot));
+
+            // Assert
+            Assert.IsTrue(added);
+        }
+
+        [TestMethod]
+        public void Dier_KanNietToegevoegdWorden_AanVolleWagon()
+        {
+            // Arrange
+            Wagon wagon = new Wagon();
+            wagon.TryAdd(new Dier(Voedsel.Planten, Grootte.Groot));
+            wagon.TryAdd(new Dier(Voedsel.Planten, Grootte.Groot));
+
+            // Act
+            bool added = wagon.TryAdd(new Dier(Voedsel.Planten, Grootte.Groot));
+
+            // Assert
+            Assert.IsFalse(added);
         }
     }
 }

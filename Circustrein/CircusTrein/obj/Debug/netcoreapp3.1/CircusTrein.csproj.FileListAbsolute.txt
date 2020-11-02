@@ -7,3 +7,12 @@ C:\Users\Ramon\Desktop\Fontys\Semester 2\Algoritmiek\Circustrein\CircusTrein\obj
 C:\Users\Ramon\Desktop\Fontys\Semester 2\Algoritmiek\Circustrein\CircusTrein\obj\Debug\netcoreapp3.1\CircusTrein.csproj.CoreCompileInputs.cache
 C:\Users\Ramon\Desktop\Fontys\Semester 2\Algoritmiek\Circustrein\CircusTrein\obj\Debug\netcoreapp3.1\CircusTrein.dll
 C:\Users\Ramon\Desktop\Fontys\Semester 2\Algoritmiek\Circustrein\CircusTrein\obj\Debug\netcoreapp3.1\CircusTrein.pdb
+C:\Users\Ramon\Source\Repos\Circustrein\Circustrein\CircusTrein\bin\Debug\netcoreapp3.1\CircusTrein.deps.json
+C:\Users\Ramon\Source\Repos\Circustrein\Circustrein\CircusTrein\bin\Debug\netcoreapp3.1\CircusTrein.dll
+C:\Users\Ramon\Source\Repos\Circustrein\Circustrein\CircusTrein\bin\Debug\netcoreapp3.1\CircusTrein.pdb
+C:\Users\Ramon\Source\Repos\Circustrein\Circustrein\CircusTrein\obj\Debug\netcoreapp3.1\CircusTrein.csprojAssemblyReference.cache
+C:\Users\Ramon\Source\Repos\Circustrein\Circustrein\CircusTrein\obj\Debug\netcoreapp3.1\CircusTrein.AssemblyInfoInputs.cache
+C:\Users\Ramon\Source\Repos\Circustrein\Circustrein\CircusTrein\obj\Debug\netcoreapp3.1\CircusTrein.AssemblyInfo.cs
+C:\Users\Ramon\Source\Repos\Circustrein\Circustrein\CircusTrein\obj\Debug\netcoreapp3.1\CircusTrein.csproj.CoreCompileInputs.cache
+C:\Users\Ramon\Source\Repos\Circustrein\Circustrein\CircusTrein\obj\Debug\netcoreapp3.1\CircusTrein.dll
+C:\Users\Ramon\Source\Repos\Circustrein\Circustrein\CircusTrein\obj\Debug\netcoreapp3.1\CircusTrein.pdb
